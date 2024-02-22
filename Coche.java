@@ -10,38 +10,38 @@ package proyecto;
  * Creacion de la clase 'Coche'
  */
 public class Coche extends Vehiculo {
-	
+
 	private String modelo;
-	
+
 	private String marca;
-	
-	
+
 	/**
 	 * Constructor vacio de la clase 'Coche'
 	 */
 	public Coche() {
-		
+
 	}
-	
 
 	/**
 	 * Constructor con todos los parametros de la clase 'Coche'
+	 * 
 	 * @param nombreProp
 	 * @param matricula
 	 * @param kms
 	 * @param marca
 	 * @param modelo
 	 */
-	public Coche(String nombreProp, String matricula, int kms,String marca, String modelo) {
+	public Coche(String nombreProp, String matricula, int kms, String marca, String modelo) {
 		super(nombreProp, matricula, kms);
 
 		this.marca = marca;
-		
+
 		this.modelo = modelo;
 	}
 
 	/**
 	 * Metodo para conocer valor del parametro 'modelo'
+	 * 
 	 * @return modelo
 	 */
 	public String getModelo() {
@@ -50,6 +50,7 @@ public class Coche extends Vehiculo {
 
 	/**
 	 * Metodo para establecer valor del parametro 'modelo'
+	 * 
 	 * @param modelo
 	 */
 	public void setModelo(String modelo) {
@@ -58,6 +59,7 @@ public class Coche extends Vehiculo {
 
 	/**
 	 * Metodo para conocer valor del parametro 'marca'
+	 * 
 	 * @return marca
 	 */
 	public String getMarca() {
@@ -66,6 +68,7 @@ public class Coche extends Vehiculo {
 
 	/**
 	 * Metodo para establecer valor del parametro 'marca'
+	 * 
 	 * @param marca
 	 */
 	public void setMarca(String marca) {
@@ -74,9 +77,12 @@ public class Coche extends Vehiculo {
 
 	@Override
 	public String toString() {
-		return "Coche [modelo=" + modelo + ", marca=" + marca + "]";
+
+		String aux;
+
+		aux = "[modelo_Coche=" + modelo + ", marca_Coche=" + marca + "]";
+
+		return super.toString() + aux;
 	}
-	
-	
 
 }

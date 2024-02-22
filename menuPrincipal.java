@@ -17,11 +17,11 @@ public class menuPrincipal {
 	 */
 	public static void main(String[] args) {
 		
-		Coche c1 = new Coche();
+		Coche c1 = new Coche("Pepe","1234ABC", 30000 , "Kia", "Picanto");
 		
 		Moto m1 = new Moto();
 		
-		
+		System.out.println(c1.toString());
 
 	}
 

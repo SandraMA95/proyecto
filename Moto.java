@@ -10,21 +10,21 @@ package proyecto;
  * Creacion de la clase 'Moto' que hereda de la clase 'Vehiculo'
  */
 public class Moto extends Vehiculo {
-	
+
 	private String modelo;
-	
-	private String marca; 
-	
+
+	private String marca;
+
 	/**
 	 * Constructor vacio de la clase 'Moto'
 	 */
 	public Moto() {
-		
-		
+
 	}
 
 	/**
 	 * Constructor con todos los parametros de la clase 'Moto'
+	 * 
 	 * @param nombreProp
 	 * @param matricula
 	 * @param kms
@@ -33,14 +33,15 @@ public class Moto extends Vehiculo {
 	 */
 	public Moto(String nombreProp, String matricula, int kms, String modelo, String marca) {
 		super(nombreProp, matricula, kms);
-		
+
 		this.marca = marca;
-		
+
 		this.modelo = modelo;
 	}
 
 	/**
 	 * Metodo para conocer valor del parametro 'modelo'
+	 * 
 	 * @return modelo
 	 */
 	public String getModelo() {
@@ -49,6 +50,7 @@ public class Moto extends Vehiculo {
 
 	/**
 	 * Metodo para establecer valor del parametro 'modelo'
+	 * 
 	 * @param modelo
 	 */
 	public void setModelo(String modelo) {
@@ -57,6 +59,7 @@ public class Moto extends Vehiculo {
 
 	/**
 	 * Metodo para conocer valor del parametro 'marca'
+	 * 
 	 * @return marca
 	 */
 	public String getMarca() {
@@ -65,17 +68,23 @@ public class Moto extends Vehiculo {
 
 	/**
 	 * Metodo para establecer valor del parametro 'marca'
+	 * 
 	 * @param marca
 	 */
 	public void setMarca(String marca) {
 		this.marca = marca;
 	}
 
+	
+
 	@Override
 	public String toString() {
-		return "Moto [modelo=" + modelo + ", marca=" + marca + "]";
+		
+		String aux; 
+		
+		aux = "[modelo_Moto=" + modelo + ", marca_Moto=" + marca + "]";
+		
+		return super.toString() + aux;
 	}
-	
-	
 
 }
