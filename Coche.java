@@ -11,9 +11,9 @@ package proyecto;
  */
 public class Coche extends Vehiculo {
 	
-	private String modelo;
-	
 	private String marca;
+	
+	private String modelo;
 
 	public Coche(String nombre, String dni, String matricula, int kms, Tipo tipo, String modelo, String marca) {
 		super(nombre, dni, matricula, kms, tipo);
