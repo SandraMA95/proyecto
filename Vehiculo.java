@@ -19,13 +19,7 @@ public class Vehiculo {
 	
 	private int kms;
 	
-	private Tipo tipo;
 	
-	enum Tipo {
-		
-		TURISMO, CAMION, AUTOBUS, FURGONETA
-	}
-
 	/**
 	 * Constructor con todos los parametros de la clase 'Vehiculo'
 	 * @param nombre
@@ -34,13 +28,13 @@ public class Vehiculo {
 	 * @param kms
 	 * @param tipo
 	 */
-	public Vehiculo(String nombre, String dni, String matricula, int kms, Tipo tipo) {
+	public Vehiculo(String nombre, String dni, String matricula, int kms) {
 		
 		this.nombre = nombre;
 		this.dni = dni;
 		this.matricula = matricula;
 		this.kms = kms;
-		this.tipo = tipo;
+		
 	}
 
 	/**
@@ -107,26 +101,11 @@ public class Vehiculo {
 		this.kms = kms;
 	}
 
-	/**
-	 * Metodo para conocer valor del parametro 'tipo'
-	 * @return tipo
-	 */
-	public Tipo getTipo() {
-		return tipo;
-	}
-
-	/**
-	 * Metodo para establecer valor del parametro 'tipo'
-	 * @param tipo
-	 */
-	public void setTipo(Tipo tipo) {
-		this.tipo = tipo;
-	}
+	
 
 	@Override
 	public String toString() {
-		return "Vehiculo [nombre=" + nombre + ", dni=" + dni + ", matricula=" + matricula + ", kms=" + kms + ", tipo="
-				+ tipo + "]";
+		return "Vehiculo [nombre=" + nombre + ", dni=" + dni + ", matricula=" + matricula + ", kms=" + kms + "]";
 	}
 	
 	
