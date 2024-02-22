@@ -11,45 +11,63 @@ package proyecto;
  */
 public class Vehiculo {
 	
-	private String nombreProp;
+
+	private String nombre;
+	
+	private String dni;
+
 	
 	private String matricula;
 	
 	private int kms;
 	
 	/**
-	 * Constructor vacio de la clase Vehiculo
-	 */
-	public Vehiculo() {
-	}
-
-	/**
 	 * Constructor con todos los parametros de la clase 'Vehiculo'
-	 * @param nombreProp
+	 * @param nombre
+	 * @param dni
 	 * @param matricula
 	 * @param kms
 	 */
-	public Vehiculo(String nombreProp, String matricula, int kms) {
+	public Vehiculo(String nombre, String dni, String matricula, int kms) {
 		
-		this.nombreProp = nombreProp;
+		this.nombre = nombre;
+		this.dni = dni;
 		this.matricula = matricula;
 		this.kms = kms;
+		
 	}
 
 	/**
-	 * Metodo para conocer valor del parametro 'nombreProp'
-	 * @return nombreProp
+	 * Metodo para conocer valor del parametro 'nombre'
+	 * @return nombre
 	 */
-	public String getNombreProp() {
-		return nombreProp;
+	public String getNombre() {
+		return nombre;
 	}
 
 	/**
-	 * Metodo para establecer valor del parametro 'nombreProp'
-	 * @param nombreProp
+	 * Metodo para establecer valor del parametro 'nombre'
+	 * @param nombre
 	 */
-	public void setNombreProp(String nombreProp) {
-		this.nombreProp = nombreProp;
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	/**
+	 * Metodo para conocer valor del parametro 'dni'
+	 * @return dni
+	 */
+	public String getDni() {
+		return dni;
+	}
+
+	/**
+	 * Metodo para establecer valor del parametro 'dni'
+	 * @param dni
+	 */
+	public void setDni(String dni) {
+		this.dni = dni;
+
 	}
 
 	/**
@@ -84,9 +102,12 @@ public class Vehiculo {
 		this.kms = kms;
 	}
 
+	
+
 	@Override
 	public String toString() {
-		return "Vehiculo [nombreProp=" + nombreProp + ", matricula=" + matricula + ", kms=" + kms + "]";
+		return "Vehiculo [nombre=" + nombre + ", dni=" + dni + ", matricula=" + matricula + ", kms=" + kms + "]";
+
 	}
 	
 	

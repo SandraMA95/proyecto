@@ -15,24 +15,18 @@ public class Moto extends Vehiculo {
 
 	private String marca;
 
-	/**
-	 * Constructor vacio de la clase 'Moto'
-	 */
-	public Moto() {
-
-	}
 
 	/**
 	 * Constructor con todos los parametros de la clase 'Moto'
-	 * 
-	 * @param nombreProp
+	 * @param nombre 
+	 * @param dni 
 	 * @param matricula
 	 * @param kms
 	 * @param modelo
 	 * @param marca
 	 */
-	public Moto(String nombreProp, String matricula, int kms, String modelo, String marca) {
-		super(nombreProp, matricula, kms);
+	public Moto(String nombre, String dni, String matricula, int kms, String modelo, String marca) {
+		super(nombre, dni, matricula, kms);
 
 		this.marca = marca;
 
@@ -75,16 +69,18 @@ public class Moto extends Vehiculo {
 		this.marca = marca;
 	}
 
-	
+
+	/**
+	 * Metodo para leer datos de la clase 'Moto'
+	 */
+	public void leerDatos() {
+
+		System.out.println(super.toString() + toString());
+	}
 
 	@Override
 	public String toString() {
-		
-		String aux; 
-		
-		aux = "[modelo_Moto=" + modelo + ", marca_Moto=" + marca + "]";
-		
-		return super.toString() + aux;
+		return "Moto [marca=" + marca + ", modelo=" + modelo + "]";
 	}
 
 }

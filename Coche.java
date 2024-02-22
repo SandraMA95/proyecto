@@ -5,34 +5,36 @@
  **/
 
 package proyecto;
-
 /**
  * Creacion de la clase 'Coche'
  */
 public class Coche extends Vehiculo {
 
-	private String modelo;
-
 	private String marca;
 
-	/**
-	 * Constructor vacio de la clase 'Coche'
-	 */
-	public Coche() {
+	private String modelo;
+
+	private Tipo tipo;
+
+	enum Tipo {
+
+		TURISMO, CAMION, AUTOBUS, FURGONETA
 
 	}
 
 	/**
 	 * Constructor con todos los parametros de la clase 'Coche'
-	 * 
-	 * @param nombreProp
+	 * @param nombre
+	 * @param dni
 	 * @param matricula
 	 * @param kms
-	 * @param marca
+	 * @param tipo
 	 * @param modelo
+	 * @param marca
 	 */
-	public Coche(String nombreProp, String matricula, int kms, String marca, String modelo) {
-		super(nombreProp, matricula, kms);
+	public Coche(String nombre, String dni, String matricula, int kms, Tipo tipo, String modelo, String marca) {
+		super(nombre, dni, matricula, kms);
+
 
 		this.marca = marca;
 
@@ -75,14 +77,35 @@ public class Coche extends Vehiculo {
 		this.marca = marca;
 	}
 
+
+	/**
+	 * Metodo para conocer valor del parametro 'tipo'
+	 * @return tipo
+	 */
+	public Tipo getTipo() {
+		return tipo;
+	}
+
+	/**
+	 * Metodo para establecer valor del parametro 'tipo'
+	 * @param tipo
+	 */
+	public void setTipo(Tipo tipo) {
+		this.tipo = tipo;
+	}
+	
+	/**
+	 * Metodo para leer datos de la clase 'Coche'
+	 */
+	public void leerDatos() {
+		
+		System.out.println(super.toString() + toString());
+	}
+
 	@Override
 	public String toString() {
-
-		String aux;
-
-		aux = "[modelo_Coche=" + modelo + ", marca_Coche=" + marca + "]";
-
-		return super.toString() + aux;
+		return "Coche [marca=" + marca + ", modelo=" + modelo + ", tipo=" + tipo + "]";
 	}
+
 
 }
