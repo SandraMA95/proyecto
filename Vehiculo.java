@@ -16,6 +16,12 @@ public class Vehiculo {
 	private String matricula;
 	
 	private int kms;
+	
+	/**
+	 * Constructor vacio de la clase Vehiculo
+	 */
+	public Vehiculo() {
+	}
 
 	/**
 	 * Constructor con todos los parametros de la clase 'Vehiculo'

@@ -17,6 +17,10 @@ public class menuPrincipal {
 	 */
 	public static void main(String[] args) {
 		
+		Coche c1 = new Coche();
+		
+		Moto m1 = new Moto();
+		
 		
 
 	}

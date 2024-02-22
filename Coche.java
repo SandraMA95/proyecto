@@ -14,6 +14,15 @@ public class Coche extends Vehiculo {
 	private String modelo;
 	
 	private String marca;
+	
+	
+	/**
+	 * Constructor vacio de la clase 'Coche'
+	 */
+	public Coche() {
+		
+	}
+	
 
 	/**
 	 * Constructor con todos los parametros de la clase 'Coche'
