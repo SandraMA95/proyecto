@@ -26,7 +26,6 @@ public class Vehiculo {
 	 * @param dni
 	 * @param matricula
 	 * @param kms
-	 * @param tipo
 	 */
 	public Vehiculo(String nombre, String dni, String matricula, int kms) {
 		
@@ -71,7 +70,7 @@ public class Vehiculo {
 
 	/**
 	 * Metodo para conocer valor del parametro 'matricula'
-	 * @return
+	 * @return matricula
 	 */
 	public String getMatricula() {
 		return matricula;

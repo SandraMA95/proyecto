@@ -90,6 +90,14 @@ public class Coche extends Vehiculo {
 	public void setTipo(Tipo tipo) {
 		this.tipo = tipo;
 	}
+	
+	/**
+	 * Metodo para leer datos de la clase 'Coche'
+	 */
+	public void leerDatos() {
+		
+		System.out.println(super.toString() + toString());
+	}
 
 	@Override
 	public String toString() {

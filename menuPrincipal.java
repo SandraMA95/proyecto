@@ -6,7 +6,7 @@
 
 package proyecto;
 
-import proyecto.Vehiculo.Tipo;
+import proyecto.Coche.Tipo;
 
 /**
  * Creacion clase 'menuPrincipal'
@@ -22,6 +22,10 @@ public class menuPrincipal {
 		Coche c1 = new Coche ("Pepe", "1234567D", "1234ABC", 30000, Tipo.TURISMO, "Kia", "Picanto");
 		
 		Moto m1 = new Moto ("Pepa", "1234567P","4321CBA", 16000, "Kawasaki", "Versys");
+		
+		c1.leerDatos();
+		
+		m1.leerDatos();
 
 	}
 
