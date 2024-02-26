@@ -9,7 +9,7 @@ package proyecto;
 /**
  * Creacion de la clase 'Vehiculo'
  */
-public class Vehiculo {
+public abstract class Vehiculo {
 	
 
 	private String nombre;
@@ -102,7 +102,7 @@ public class Vehiculo {
 		this.kms = kms;
 	}
 
-	
+	abstract public void leerDatos();
 
 	@Override
 	public String toString() {
