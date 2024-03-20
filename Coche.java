@@ -16,9 +16,11 @@ public class Coche extends Vehiculo {
 
 	private Tipo tipo;
 
+	private String nombre Prop;
+
 	enum Tipo {
 
-		TURISMO, CAMION, AUTOBUS, FURGONETA
+		TURISMO, CAMION, AUTOBUS, FURGONETA, AUTOCARAVANA,TRAILER
 
 	}
 
@@ -30,9 +32,10 @@ public class Coche extends Vehiculo {
 	 * @param kms
 	 * @param tipo
 	 * @param modelo
+  	 * @param nombreProp
 	 * @param marca
 	 */
-	public Coche(String nombre, String dni, String matricula, int kms, Tipo tipo, String modelo, String marca) {
+	public Coche(String nombre, String dni, String matricula, int kms, Tipo tipo, String modelo, String marca, String nombreProp) {
 		super(nombre, dni, matricula, kms);
 
 
