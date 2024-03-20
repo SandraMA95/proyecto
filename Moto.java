@@ -9,19 +9,12 @@ package proyecto;
 /**
  * Creacion de la clase 'Moto' que hereda de la clase 'Vehiculo'
  */
-enum Tipo {
-
-		DEPORTIVA, TRAIL, CUSTOM, NAKED
-
-	}
 
 public class Moto extends Vehiculo {
 
 	private String modelo;
 
 	private String marca;
-
-	private Tipo tipo;
 
 
 	/**
@@ -34,14 +27,12 @@ public class Moto extends Vehiculo {
 	 * @param marca
   	 * @param tipo
 	 */
-	public Moto(String nombre, String dni, String matricula, int kms, String modelo, String marca, Tipo tipo) {
+	public Moto(String nombre, String dni, String matricula, int kms, String modelo, String marca) {
 		super(nombre, dni, matricula, kms);
 
 		this.marca = marca;
 
 		this.modelo = modelo;
-
-		this.tipo = tipo;
 	}
 
 	/**
@@ -80,25 +71,6 @@ public class Moto extends Vehiculo {
 		this.marca = marca;
 	}
 
-	/**
-	 * Metodo para conocer valor del parametro 'tipo'
-	 * 
-	 * @param tipo
-	 */
-
-	public void getTipo(){
-		return tipo;
-	}
-
-	/**
-	 * Metodo para establecer valor del parametro 'tipo'
-	 * 
-	 * @param tipo
-	 */
-	
-	public void setTipo(Tipo tipo){
-		this.tipo = tipo;
-	}
 
 	/**
 	 * Metodo para leer datos de la clase 'Moto'
