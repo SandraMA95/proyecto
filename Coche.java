@@ -16,9 +16,11 @@ public class Coche extends Vehiculo {
 
 	private Tipo tipo;
 
+	private String nombre Prop;
+
 	enum Tipo {
 
-		TURISMO, CAMION, AUTOBUS, FURGONETA
+		TURISMO, CAMION, AUTOBUS, FURGONETA, AUTOCARAVANA,TRAILER
 
 	}
 
@@ -30,15 +32,20 @@ public class Coche extends Vehiculo {
 	 * @param kms
 	 * @param tipo
 	 * @param modelo
+  	 * @param nombreProp
 	 * @param marca
 	 */
-	public Coche(String nombre, String dni, String matricula, int kms, Tipo tipo, String modelo, String marca) {
+	public Coche(String nombre, String dni, String matricula, int kms, Tipo tipo, String modelo, String marca, String nombreProp) {
 		super(nombre, dni, matricula, kms);
 
 
 		this.marca = marca;
 
 		this.modelo = modelo;
+
+		this.tipo = tipo;
+
+		this.nombreProp = nombreProp;
 	}
 
 	/**
@@ -77,7 +84,6 @@ public class Coche extends Vehiculo {
 		this.marca = marca;
 	}
 
-
 	/**
 	 * Metodo para conocer valor del parametro 'tipo'
 	 * @return tipo
@@ -92,6 +98,24 @@ public class Coche extends Vehiculo {
 	 */
 	public void setTipo(Tipo tipo) {
 		this.tipo = tipo;
+	}
+
+	/**
+	 * Metodo para conocer valor del parametro 'nombreProp'
+	 * @param nombreProp
+	 */
+
+	public void getNombreProp() {
+		return nombreProp;
+	}
+
+	/**
+	 * Metodo para establecer valor del parametro 'nombreProp'
+	 * @param nombreProp
+	 */
+
+	public void setNombreProp(String nombreProp) {
+		this.nombreProp = nombreProp;
 	}
 	
 	/**

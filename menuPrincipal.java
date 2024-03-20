@@ -8,6 +8,8 @@ package proyecto;
 
 import proyecto.Coche.Tipo;
 
+import java.util.ArrayList;
+
 /**
  * Creacion clase 'menuPrincipal'
  */
@@ -20,7 +22,9 @@ public class menuPrincipal {
 	 */
 	public static void main(String[] args) {
 
-		String [] lista = new String [100];
+
+		ArrayList <Vehiculo> lista = new ArrayList <Vehiculo>();
+
 
 		Coche c1 = new Coche("Pepe", "1234567D", "1234ABC", 30000, Tipo.TURISMO, "Kia", "Picanto");
 
@@ -30,9 +34,12 @@ public class menuPrincipal {
 
 		m1.leerDatos();
 
-		lista[0] = c1;
 
-		lista[1] = m1;
+		c1.add(lista);
+
+		m1.add(lista);
+
+
 	}
 
 }
