@@ -42,6 +42,10 @@ public class Coche extends Vehiculo {
 		this.marca = marca;
 
 		this.modelo = modelo;
+
+		this.tipo = tipo;
+
+		this.nombreProp = nombreProp;
 	}
 
 	/**
@@ -80,7 +84,6 @@ public class Coche extends Vehiculo {
 		this.marca = marca;
 	}
 
-
 	/**
 	 * Metodo para conocer valor del parametro 'tipo'
 	 * @return tipo
@@ -95,6 +98,24 @@ public class Coche extends Vehiculo {
 	 */
 	public void setTipo(Tipo tipo) {
 		this.tipo = tipo;
+	}
+
+	/**
+	 * Metodo para conocer valor del parametro 'nombreProp'
+	 * @param nombreProp
+	 */
+
+	public void getNombreProp() {
+		return nombreProp;
+	}
+
+	/**
+	 * Metodo para establecer valor del parametro 'nombreProp'
+	 * @param nombreProp
+	 */
+
+	public void setNombreProp(String nombreProp) {
+		this.nombreProp = nombreProp;
 	}
 	
 	/**
