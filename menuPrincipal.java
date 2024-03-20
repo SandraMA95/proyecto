@@ -20,6 +20,8 @@ public class menuPrincipal {
 	 */
 	public static void main(String[] args) {
 
+		String [] lista = new String [100];
+
 		Coche c1 = new Coche("Pepe", "1234567D", "1234ABC", 30000, Tipo.TURISMO, "Kia", "Picanto");
 
 		Moto m1 = new Moto("Pepa", "1234567P", "4321CBA", 16000, "Kawasaki", "Versys");
@@ -28,6 +30,9 @@ public class menuPrincipal {
 
 		m1.leerDatos();
 
+		lista[0] = c1;
+
+		lista[1] = m1;
 	}
 
 }
