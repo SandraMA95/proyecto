@@ -15,11 +15,10 @@ public abstract class Vehiculo {
 	private String nombre;
 	
 	private String dni;
-
 	
 	private String matricula;
 	
-	private int kms;
+	private double kms;
 	
 	/**
 	 * Constructor con todos los parametros de la clase 'Vehiculo'
@@ -28,7 +27,7 @@ public abstract class Vehiculo {
 	 * @param matricula
 	 * @param kms
 	 */
-	public Vehiculo(String nombre, String dni, String matricula, int kms) {
+	public Vehiculo(String nombre, String dni, String matricula, double kms) {
 		
 		this.nombre = nombre;
 		this.dni = dni;
