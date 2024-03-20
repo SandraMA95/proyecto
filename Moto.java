@@ -32,6 +32,7 @@ public class Moto extends Vehiculo {
 	 * @param kms
 	 * @param modelo
 	 * @param marca
+  	 * @param tipo
 	 */
 	public Moto(String nombre, String dni, String matricula, int kms, String modelo, String marca, Tipo tipo) {
 		super(nombre, dni, matricula, kms);
