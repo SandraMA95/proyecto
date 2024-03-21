@@ -5,6 +5,9 @@
  **/
 
 package proyecto;
+enum tipo{
+	deportiva, custom, kawasaky
+}
 
 /**
  * Creacion de la clase 'Moto' que hereda de la clase 'Vehiculo'
